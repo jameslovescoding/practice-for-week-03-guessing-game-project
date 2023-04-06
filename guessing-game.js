@@ -55,9 +55,9 @@ function askRange() {
       if (typeof num === 'number') {
         range.push(num);
         if (range.length === 2) {
-          console.log(`I am thinking of a number between ${range[0]} and ${range[1]}.`)
+          console.log(`I am thinking of a number between ${range[1]} and ${range[0]}.`)
           secretNumber = randomInRange(range[0], range[1]);
-          checkGuess();
+          askGuess();
         } else {
           askNumber('Enter a min number: ', askNumber);
         }
